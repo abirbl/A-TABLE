@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À TABLE!</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+</head>
+<body>
+    <!--  NAVBAR -->
+    <nav class="navbar" id="topNav">
+        <div class="navbar__container">
+            <a href="#hero" id="navbar__logo"><img src="img/logo.png"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#infinite" class="navbar__links" id="home-page">Pourkoi À TABLE!</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#Menu" class="navbar__links" id="about-page">Menu de la semaine</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#order" class="navbar__links" id="services-page">Commander</a>
+                </li> 
+                <li class="navbar__item">
+                    <a href="#Review" class="navbar__links" id="services-page">À propos</a>
+                </li> 
+                <li class="navbar__item">
+                    <a href="#Team" class="button" id="signup">Se connecter</a>
+                </li>           
+            </ul>
+        </div>
+    </nav>
+    <script>
+        var topNav = document.getElementById("topNav"),
+        stop = topNav.offsetTop,
+        docBody = document.documentElement || document.body.parentNode || document.body,
+        hasOffset = window.pageYOffset !== undefined,
+        scrollTop;
+
+        window.onscroll = function(e) {
+            scrollTop = hasOffset ? window.pageYOffset : docBody.scrollTop;
+            if (scrollTop >= stop) {
+                topNav.className = 'sticky';
+            } else {
+                topNav.className = '';
+            }
+        }
+    </script>
+    <!--  HERO -->
+    <section id="hero" >
+        <div class="vid">
+            <video src="img/vid.mp4" muted autoplay loop class="video" style="height: 800px;"></video>
+            </div>
+        <div class="contenu">
+            <h3>La meilleure façon de manger</h3>
+            <h6>Des repas prêts-à-cuisiner et prêts-à-manger simples et délicieux, faits d’ingrédients locaux et livrés à la maison chaque semaine.</h6>
+            <p><i class="fa-solid fa-location-dot"></i>&ensp;FAIT AU MAROC</p>
+            <span class="arrow"><i class="fa-solid fa-arrow-down-long"></i></span>
+        </div>
+    </section>
+
+    <!--  SLIDESHOW  -->
+    <section class="slide">
+        <div id="infinite" class="highway-slider">
+            <div class="container highway-barrier">
+                <ul class="highway-lane">
+                    <li class="highway-car"><img src="img/slide1.svg"><span>Frais et local</span></li>
+                    <li class="highway-car"><img src="img/slide2.svg"><span >Prêt en 30 minutes</span></li>
+                    <li class="highway-car"><img src="img/slide3.svg"><span>Livraison à domicile gratuite</span></li>
+                    <li class="highway-car"><img src="img/slide1.svg"><span>Frais et local</span></li>
+                    <li class="highway-car"><img src="img/slide2.svg"><span>Prêt en 30 minutes</span></li>
+                    <li class="highway-car"><img src="img/slide3.svg"><span>Livraison à domicile gratuite</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+        <div class="about" id="About">
+            <div class="about_main">   
+                <div class="image">
+                    <img src="img/IMAGE.jpeg">
+                </div>   
+                <div class="about_text">
+                    <h1><span>À propos de</span>Nous</h1>
+                    <h3>Vos repas, simplifiés.</h3>
+                    <p>
+                        Étant pionniers d'une alimentation malsaine, on s’est donné comme mission 
+                        de changer la vie des gens. Que ce soit en vous redonnant envie de 
+                        cuisiner vos plats préférés, en vous permettant d’avoir un peu de temps de 
+                        lousse en soirée ou tout simplement en éliminant la charge mentale associée 
+                        à la planification de repas, on a créé un service qui se veut la 
+                        solution parfaite pour améliorer votre vie 
+                        à chaque semaine.
+                    </p>
+                </div>    
+            </div>    
+            <div class="main_btn">
+                <a href="#">Commander </a>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>  
+        </div>
+
+   <!--MENU SECTION-->
+    <div class="menu" id="Menu">
+        <h1>Menu<span>de la semaine</span></h1>
+        <h3>
+            Des recettes faciles à cuisiner avec modernité faites d’ingrédients 
+            toujours frais <br>et variés qui viennent des 4 coins du Maroc.
+        </h3>
+        <div class="menu_box">
+            <!--<div class="menu_card">
+            <div class="menu_image">
+                <img src="img/menu1.png">
+            </div>
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="menu_info">
+                <h2>Sandwich</h2>
+                <p>
+                    avec oeufs, persil, céleri, roquette et cornichon avec 
+                    salade de carotte crémeuse
+                </p>
+                <h3>25 min.</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            </div>  
+            <div class="menu_card">
+            <div class="menu_image">
+                <img src="img/menu5.png">            
+            </div>
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="menu_info">
+                <h2>Couscous</h2>
+                <p>
+                    avec aubergine tomaté, pois chiches
+                     abricots séchés, yogourt et persil
+                </p>
+                <h3>30 min.</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <a href="#" class="menu_btn"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            </div> 
+            <div class="menu_card">
+            <div class="menu_image">
+                <img src="img/menu6.png">
+            </div>
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="menu_info">
+                <h2>Soupe</h2>
+                <p>
+                    avec pancetta, haricots rouges et fromage grana padano 
+                </p>
+                <h3>35 min.</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            </div> 
+            <div class="menu_card">
+            <div class="menu_image">
+                <img src="img/menu2.png">
+            </div>
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="menu_info">
+                <h2>Salade</h2>
+                <p>
+                    avec saumon, céleri, aneth et citron servi avec
+                    un couscous aux canneberges séchées et chou.
+                </p>
+                <h3>30 min.</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#" class="menu_btn"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            </div> -->
+            <div class="menu_card">
+            <div class="menu_image">
+                <img src="img/menu3.png">
+            </div>
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="menu_info">
+                <h2>Tofu à la coréenne</h2>
+                <p>
+                    avec riz tomaté, bok choy, légumes croquants et coriandre
+                </p>
+                <h3>30 min.</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            </div> 
+            <div class="menu_card">
+            <div class="menu_image">
+                <img src="img/menu4.png">
+            </div>
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="menu_info">
+                <h2>Tacos de crevettes</h2>
+                <p>
+                    avec guacamole, chapelure croustillante et chou rouge mariné
+                </p>
+                <h3>20 min.</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            </div>  
+            <div class="menu_card">
+            <div class="menu_image">
+                <img src="img/menu7.png">
+            </div>
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Boréal au saumon</h2>
+                <p>
+                    avec millet, pommes de terre rattes et salade crémeuse 
+                    de betterave, pois sucrés et aneth
+                </p>
+                <h3>25 min.</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#" class="menu_btn"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            </div> 
+            <div class="menu_card">
+            <div class="menu_image">
+                <img src="img/menu8.webp">
+            </div>
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="menu_info">
+                <h2>Biryani</h2>
+                <p>
+                    Riz, sel, ghee, viande, cardamome, clou de girofle, 
+                    coriandre, feuilles de laurier, 
+                    feuilles de menthe, gingembre, safran, oignon, ail
+                </p>
+                <h3>30 min.</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <a href="#" class="menu_btn"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            </div> 
+        </div>
+        <div class="main_btn">
+            <a href="#">Voir Menu</a>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+    </div>  
+
+    <!--  ORDER SECTION  -->
+    <section id="order">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="img/comd1.svg">
+            </div>
+            <div class="grid-item"></div>
+            <div class="grid-item">
+                <img src="img/comd3.svg">
+            </div> 
+            <div class="grid-item">
+                <div class="text">
+                    <h2>Créez votre kit repas</h2>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="img/comd2.svg">
+            </div>
+            <div class="grid-item">
+                <div class="text">
+                   <h2>Mangez sans culpabilité </h2>
+                </div>
+            </div>  
+            <div class="grid-item">
+                <div class="text">
+                    <p>Choisissez parmi 17 nouvelles recettes
+                        prêtes-à-cuisiner chaque semaine, des 
+                        repas prêt-à-manger et toutes sortes de 
+                        produits locaux.
+                    </p>
+            </div>
+            </div>
+            <div class="grid-item">
+                <div class="text">
+                    <h2>Recevez votre boîte au pied de votre porte</h2>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="text">
+                    <p>Cuisinez des repas délicieux et équilibrés
+                        faits d’ingrédients frais et locaux en 30 
+                        minutes.
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item"></div>
+            <div class="grid-item">
+                <div class="text">
+                    <p>Votre boîte repas est conçue pour garder
+                        vos repas au frais et vous est livrée
+                        gratuitement à la maison.
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item"></div>
+            <input type="submit" class="btn" value="Commander ma premiere boîte">
+        </div>
+    </section>
+
+      <!-- REVIEW  -->
+    <div class="review" id="Review">
+        <h1>Avis des<span>Clients</span></h1>
+        <div class="review_box">
+            <div class="review_card">
+                <div class="review_profile">
+                    <img src="img/review_1.png">
+                </div>
+                <div class="review_text">
+                    <h2 class="name">Abir BALLA</h2>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <p>
+                        J'adore la formule nous découvrons de nouvelle recettes
+                        et nous adorons partager un repas en famille, tous le
+                        le monde met du sien. Merci À table!
+                    </p>
+                </div>
+            </div>
+            <div class="review_card">
+                <div class="review_profile">
+                    <img src="img/review_2.png">
+                </div>
+                <div class="review_text">
+                    <h2 class="name">Reda OUJGHOU</h2>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <p>
+                        Super beau projet! Ça nous premet d'éviter un casse tête à savoir 
+                        quoi manger pour souper, nous avons en plus fait de belle découverte.
+                        Livraison toujours à la datte prévu. Simpe bon et efficace
+                    </p>
+                </div>
+            </div>
+            <div class="review_card">
+                <div class="review_profile">
+                    <img src="img/review_3.png">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Wiame Lahbi</h2>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <p>
+                        Excellent repas, excellent service. Site internet simple 
+                        à utiliser et beaucoup de variété. Recette goûteuse et
+                        simple à faire. À table a changé ma vie.
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="review_card">
+                <div class="review_profile">
+                    <img src="img/review_4.png">
+                </div>
+                <div class="review_text">
+                    <h2 class="name">Mohammed ALAMI</h2>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <p>
+                        À table me simplifie la vie par les idées de repas
+                        succulentes. Je suis capable de refaire les recettes 
+                        chez moi. J'adore avoir ma touche dedans.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--  TEAM  -->
+    <div class="team" id="Team">
+        <h1>Our<span>Team</span></h1>
+        <div class="team_box">
+            <div class="profile">
+                <img src="img/chef1.png">
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio"></p>
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="img/chef2.png">
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio"></p>
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="img/chef3.jpg">
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio"></p>
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="img/chef4.jpg">
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio"></p>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>          
+            <div class="texte">
+                <h3>REJOINS NOTRE ÉQUIPE</h3>
+                <h1>Inscrivez-vous aujourd'hui</h1>
+                <h4>Voyez ce qui nous différencie</h4>
+                <input type="submit" class="btn" value="Se connecter">
+            </div>
+        </div>
+    </div>
+
+ <!--  FOOTER  -->
+    <footer>
+        <div class="footer_main">
+            <div class="footer_tag">
+                <h2>Localisation</h2>
+                <p>Casablanca</p>
+                <p>Rabat</p>
+                <p>Tanger</p>
+                <p>Fes</p>
+                <p>Meknas</p>
+            </div>
+            <div class="footer_tag">
+                <h2>Liens Rapides</h2>
+                <p><a href="#hero">Home</a></p>
+                <p><a href="#About">À propos</a></p>
+                <p><a href="#Menu">Menu</a></p>
+                <p><a href="#order">Commander</a></p>
+            </div>
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>+212 66 3456 789</p>
+                <p>+212 56 5568 456</p>
+                <p>à.table@gmail.com</p>
+                <p>à_table@gmail.com</p>
+            </div>
+            <div class="footer_tag">
+                <h2>Nos Services</h2>
+                <p>Livraison Rapides</p>
+                <p>Payments  Facile</p>
+                <p>24 x 7 Support</p>
+            </div>
+            <div class="footer_tag">
+                <h2>Suivre</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+
+        
+</body>
+</html>

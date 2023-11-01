@@ -1,0 +1,51 @@
+ <!doctype html>
+    <html>
+        <head>
+            <title> interactiveCart.io </title>
+            <script src="https://kit.fontawesome.com/ecf5b6c191.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <div class="container">
+                <img class="center" src="shopping-cart.png" alt="loading" height="300px" width="300px" >
+                <span id="demo"></span>
+            </br>
+            <div class="container2">
+                <script src="app.js"></script>
+                <button class="button1" onclick="plus();"> <i class="fa-solid fa-circle-plus"></i> 
+                </button>
+                <button class="button2" onclick="minus();"> <i class="fa-solid fa-circle-minus"></i> 
+                </button>
+                </div> </div>
+        </body>
+    </html>
+<script>
+var i=0;
+const plus = function(){
+    i += 1;
+    document.getElementById("demo").innerText = i;
+}
+const minus = function(){
+    i -= 1;
+    document.getElementById("demo").innerText = i;
+}
+</script>
+<style>
+
+
+.container{
+height: 400px;
+width: 400px;
+background-color: rgb(240, 168, 221);
+}
+.container2{
+    text-align: center;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+</style>
+
+    

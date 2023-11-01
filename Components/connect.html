@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in / Sign up Form</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class='bg'></section>
+<!-- FORM SECTION -->  
+    <main>   
+    <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form method="post" action="home.php" autocomplete="off" class="sign-in-form">
+              <div class="heading">
+                <h2>Content de te revoir</h2>
+                <h6>Pas encore inscrit?</h6>
+                <a href="#" class="toggle">S'inscrire</a>
+              </div>
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input name="name" type="text" minlength="4" class="input-field" autocomplete="off" required/>
+                  <label class="label"><i class="fas fa-user"></i>Nom d'utilisateur</label>
+                </div>
+                <div class="input-wrap">
+                  <input name="password" type="password" minlength="4" class="input-field" autocomplete="off" required/>
+                  <label class="label"><i class="fas fa-lock"></i>Mot de passe</label>
+                </div>
+                <input type="submit" value="Sign In" class="sign-btn" />
+                <p class="text">
+                    Mot de passe oublié ou données de connexion oubliées ?
+                  <a href="#">Obtenir de l'aide</a> Connectez-vous
+                </p>
+                <p class="social-text">Ou Connectez-vous avec la plateforme sociale</p>
+                <div class="social-media">
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+              </div>
+            </form>
+            <form action="index.html" autocomplete="off" class="sign-up-form">
+              <div class="heading">
+                <h2>Commencer</h2>
+                <h6>Vous avez déjà un compte?</h6>
+                <a href="#" class="toggle">S'identifier</a>
+              </div>
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input type="text" minlength="4" class="input-field" autocomplete="off" required/>
+                  <label class="label"><i class="fas fa-user"></i>Nom d'utilisateur</label>
+                </div>
+                <div class="input-wrap">
+                  <input type="email" class="input-field" autocomplete="off" required/>
+                  <label class="label"><i class="fas fa-envelope"></i>Pseudo@email.com</label>
+                </div>
+                <div class="input-wrap">
+                    <input type="text" minlength="4" class="input-field" autocomplete="off" required/>
+                    <label class="label"><i class="fas fa-phone"></i>Téléphone</label>
+                </div>
+                <div class="input-wrap">
+                    <input type="text" minlength="4" class="input-field" autocomplete="off" required/>
+                    <label class="label"><i class="fas fa-location-dot"></i>Adresse</label>
+                </div>
+                <div class="input-wrap">
+                  <input  type="password"  minlength="4"  class="input-field"  autocomplete="off"  required/>
+                  <label class="label"><i class="fas fa-lock"></i>Mot de passe</label>
+                </div>
+                <input type="submit" value="Sign Up" class="sign-btn" />
+                <p class="text">
+                    En m'inscrivant, j'accepte les
+                  <a href="#">Conditions de services</a> et
+                  <a href="#">Politique de confidentialité</a>
+                </p>
+                <p class="social-text">Ou Inscrivez-vous avec la plateforme sociale</p>
+                <div class="social-media">
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="img/logo.png" class="image img-1 show" alt="" />
+              <img src="img/1.svg" class="image img-2" alt="" />
+              <img src="img/2.svg" class="image img-3" alt="" />
+              <img src="img/3.svg" class="image img-4" alt="" />
+              <img src="img/4.svg" class="image img-5" alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                    <h2>Livraison rapide et gratuite</h2>
+                    <h2>Rejoignez-nous pour voir nos recettes</h2>
+                    <h2>Concevez votre repas facilement</h2>
+                    <h2>Gagner un temps considerable</h2>
+                    <h2>Votre coulis en bon état</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+                <span data-value="4"></span>
+                <span data-value="5"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Javascript -->
+    <script>
+        const inputs = document.querySelectorAll(".input-field");
+        const toggle_btn = document.querySelectorAll(".toggle");
+        const main = document.querySelector("main");
+        const bullets = document.querySelectorAll(".bullets span");
+        const images = document.querySelectorAll(".image");
+        inputs.forEach((inp) => {
+            inp.addEventListener("focus", () => {
+                inp.classList.add("active");
+            });
+            inp.addEventListener("blur", () => {
+                if (inp.value != "") return;
+                inp.classList.remove("active");
+            });
+        });
+        toggle_btn.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                main.classList.toggle("sign-up-mode");
+            });
+        });
+        function moveSlider() {
+            let index = this.dataset.value;
+            let currentImage = document.querySelector(`.img-${index}`);
+            images.forEach((img) => img.classList.remove("show"));
+            currentImage.classList.add("show");
+            const textSlider = document.querySelector(".text-group");
+            textSlider.style.transform = `translateY(${-(index - 1) * 2.2}rem)`;
+             bullets.forEach((bull) => bull.classList.remove("active"));
+            this.classList.add("active");
+        }
+        bullets.forEach((bullet) => {
+            bullet.addEventListener("click", moveSlider);
+        });
+    </script>
+  </body>
+</html>

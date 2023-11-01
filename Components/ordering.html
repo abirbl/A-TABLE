@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <!--  NAVBAR -->
+        <nav class="navbar" id="topNav">
+            <div class="navbar__container">
+                <a href="home.html" id="navbar__logo"><img src="img/logo.png"></a>
+                <i class="fa-solid fa-cart-shopping navbar__l" id="cart-icon"></i>
+            </div>
+        </nav>
+        <div class="cart">
+            <h2 class="cart-title">Votre commande</h2>
+            <div class="cart-content">
+                <!--<div class="cart-box">
+                    <img src="img/menu1.png" alt="" class="cart-image menu2 menu_image">
+                    <div class="detail-box">
+                        <div class="cart-product-title">Sandwich</div>
+                        <div class="cart-price">55 dh</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <i class="fa-solid fa-trash cart-remove"></i>
+                </div>-->
+            </div>
+            <div class="total">
+                <div class="total-title">Totale</div>
+                <div class="total-price"></div>
+            </div>
+            <a href="payer.html"><button type="button" class="btn-buy">Passer la commande</button></a>
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+    </header>
+        <!--Main Shop-->
+        <div class="menu2" id="Menu2">
+            <h1>Que voulez-vous<span>préparer?</span></h1>
+                <div class="menu_box">
+                    <!--1-->
+                    <div class="menu_card">
+                        <div class="menu_image ">
+                            <img src="img/menu1.png" class="product-img" alt="">
+                            <h2 class="product-title">Sandwich</h2>
+                            <p>
+                                avec oeufs, persil, céleri, roquette et cornichon avec 
+                                salade de carotte crémeuse
+                            </p>
+                            <h3>25 min.</h3>
+                            <p class="price">55 dh</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                               </div>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>     
+                        </div>
+                    </div>  
+                    <!--2-->
+                    <div class="menu_card">
+                        <div class="menu_image">
+                            <img src="img/menu5.png" class="product-img">            
+                            <h2 class="product-title">Couscous</h2>
+                            <p>
+                                avec aubergine tomaté, pois chiches
+                                abricots séchés, yogourt et persil
+                            </p>
+                            <h3>30 min.</h3>
+                            <p class="price">35 dh</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>     
+                        </div>
+                    </div> 
+                    <!--3-->
+                    <div class="menu_card">
+                        <div class="menu_image">
+                            <img src="img/menu9.png" class="product-img">
+                            <h2 class="product-title">Pizza aux mini boulettes</h2>
+                            <p>
+                                avec poivron vert, champignons, origan et mozzarella
+                            </p>
+                            <h3>30 min.</h3>
+                            <p class="price">42 dh</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>     
+                        </div> 
+                    </div>
+                    <!--4-->
+                    <div class="menu_card">
+                        <div class="menu_image">
+                            <img src="img/menu6.png" class="product-img">
+                            <h2 class="product-title">Soupe</h2>
+                            <p>
+                                avec pancetta, haricots rouges et fromage grana padano 
+                            </p>
+                            <h3>35 min.</h3>
+                            <p class="price">67 dh</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>     
+                        </div>       
+                    </div>
+                    <!--5-->
+                    <div class="menu_card">
+                        <div class="menu_image">
+                            <img src="img/menu2.png" class="product-img">
+                            <h2 class="product-title">Salade</h2>
+                            <p>
+                                avec saumon, céleri, aneth et citron servi avec
+                                un couscous aux canneberges séchées et chou.
+                            </p>
+                            <h3>30 min.</h3>
+                            <p class="price">45 dh</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>     
+                        </div>
+                    </div> 
+                    <!--6-->
+                    <div class="menu_card">
+                        <div class="menu_image">
+                            <img src="img/menu3.png" class="product-img">
+                            <h2 class="product-title">Tofu à la coréenne</h2>
+                            <p>
+                            avec riz tomaté, bok choy, légumes croquants et coriandre
+                            </p>
+                            <h3>30 min.</h3>
+                            <p class="price">35 dh</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>     
+                        </div>
+                    </div>
+                    <!--7--> 
+                    <div class="menu_card">
+                        <div class="menu_image">
+                            <img src="img/menu4.png" class="product-img">
+                            <h2 class="product-title">Tacos de crevettes</h2>
+                            <p>
+                                avec guacamole, chapelure croustillante et chou rouge mariné
+                            </p>
+                            <h3>20 min.</h3>
+                            <p class="price">38 dh</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                    <!--8-->  
+                    <div class="menu_card">
+                        <div class="menu_image">
+                            <img src="img/menu7.png" class="product-img">
+                            <h2 class="product-title">Boréal au saumon</h2>
+                            <p>
+                                avec millet, pommes de terre rattes et salade crémeuse 
+                                de betterave, pois sucrés et aneth
+                            </p>
+                            <h3>25 min.</h3>
+                            <p class="price">55 dh</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div> 
+                    <!--9-->
+                    <div class="menu_card">
+                        <div class="menu_image">
+                            <img src="img/menu8.webp" class="product-img">
+                            <h2 class="product-title">Biryani</h2>
+                            <p>
+                            Riz, sel, ghee, viande, cardamome, clou de girofle, 
+                            coriandre, feuilles de laurier, 
+                            feuilles de menthe, gingembre, safran, oignon, ail
+                            </p>
+                            <h3>30 min.</h3>
+                            <p class="price">65 dh</p>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div> 
+                </div>
+        </div>
+        </section>
+      <script src="index.js"></script>
+
+</body>
+</html>
